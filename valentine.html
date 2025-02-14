@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Valentine's Day</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #ffdde1;
+            color: #d6336c;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        h1 {
+            font-size: 3em;
+        }
+        .gallery img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            margin: 10px;
+            border-radius: 15px;
+            box-shadow: 2px 2px 10px #d6336c;
+        }
+        .letter {
+            background: #fff;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px #d6336c;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            background-color: #d6336c;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #a02450;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Happy Valentine's Day ❤️</h1>
+        <p>To my love, you mean the world to me!</p>
+        
+        <div class="gallery">
+            <img src="love1.jpg" alt="Memory 1">
+            <img src="love2.jpg" alt="Memory 2">
+            <img src="love3.jpg" alt="Memory 3">
+        </div>
+        
+        <div class="letter">
+            <h2>My Love Letter to You</h2>
+            <p>My dearest love, every moment with you is a blessing. Your smile lights up my world, and I can't imagine life without you...</p>
+            <p>Thank you for being my rock, my partner, and my best girl friend. I love you more than words can express, and I can't wait to spend the rest of my life with you.</p>
+            <p>Forever and always, your love❤️.</p>
+        </div>
+        
+        
+        
+        <audio id="loveSong" src="lovesong.mp3" autoplay controls></audio>
+    </div>
+
+    <script>
+        function playMusic() {
+            document.getElementById("loveSong").play();
+        }
+        function pauseMusic() {
+            audio.pause();
+        }
+
+        function stopMusic() {
+            audio.pause();
+            audio.currentTime = 0;
+        }
+
+        function replayMusic() {
+            audio.currentTime = 0;
+            audio.play();
+        }
+        window.playMusic = playMusic;
+        window.pauseMusic = pauseMusic;
+        window.stopMusic = stopMusic;
+        window.replayMusic = replayMusic;
+    </script>
+</body>
+</html>
